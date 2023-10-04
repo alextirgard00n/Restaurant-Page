@@ -1,3 +1,11 @@
+import printHome from "./home";
+import printMenu from "./menu";
+
 console.log("hello world");
-console.log("testing watch function");
-console.log("testing github pages");
+
+//current year for footer
+let currYear = document.querySelector('.currYear');
+currYear.textContent = new Date().getFullYear();
+
+printMenu();
+printHome();

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: botw;
+    src: url(./font/The\ Wild\ Breath\ of\ Zelda.otf)
+}
+
+body {
+    font-family: botw;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    background-color: black;
+    color: #f9f6ea;
+    font-size: 16px;
+    /* transition: .3s; */
+}
+
+body:before {
+    background-image: url(./images/Backgrounds/totk-material-1_basecolor.webp);
+    content: "";
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    /* filter: blur(1px); */
+    opacity: 0.63;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    /* padding-bottom: 20px; */
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+
+.link-chef {
+    width: 600px;
+    padding-top: 80px;
+}
+
+
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /* transition: .2s; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+}
+
+.fa-github {
+    color: white;
+    font-size: 23px;
+    padding-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.fa-github:hover {
+    transform: scale(1.4);
+}
