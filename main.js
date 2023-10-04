@@ -1,1 +1,1 @@
-console.log("hello world"),console.log("testing watch function"),console.log("testing github pages");
+(()=>{"use strict";console.log("hello world"),document.querySelector(".currYear").textContent=(new Date).getFullYear(),console.log("menu"),console.log("home")})();
