@@ -1,11 +1,4 @@
-import printHome from "./home";
-import printMenu from "./menu";
+import initializeWebsite from "./website";
 
-console.log("hello world");
+initializeWebsite();
 
-//current year for footer
-let currYear = document.querySelector('.currYear');
-currYear.textContent = new Date().getFullYear();
-
-printMenu();
-printHome();
