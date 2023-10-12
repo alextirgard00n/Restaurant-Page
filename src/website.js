@@ -101,10 +101,8 @@ function initializeWebsite() {
     content.appendChild(createFooter());
 
 
-    // setActiveButton(document.querySelector(".button-nav"));
-    // loadHome();
-    setActiveButton(document.querySelector(".button-nav:nth-child(3)"));
-    loadContact();
+    setActiveButton(document.querySelector(".button-nav"));
+    loadHome();
 }
 
 export default initializeWebsite;
