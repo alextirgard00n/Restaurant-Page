@@ -8,7 +8,7 @@ function createHome() {
     chefImage.classList.add("link-chef");
 
     home.appendChild(createParagraph("Link Cooks For You !"));
-    home.appendChild(createParagraph("8 dishes personally handpicked from his hylian ass"));
+    home.appendChild(createParagraph("9 dishes personally handpicked from his hylian ass"));
     home.appendChild(chefImage);
 
     return home;

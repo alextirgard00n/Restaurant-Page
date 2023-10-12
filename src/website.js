@@ -1,6 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
-// import loadContact from "./contact";
+import loadContact from "./contact";
 
 
 function createHeader() {
@@ -44,7 +44,7 @@ function createNav() {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
-        // loadContact();
+        loadContact();
     });
 
     nav.appendChild(homeButton);
@@ -101,10 +101,10 @@ function initializeWebsite() {
     content.appendChild(createFooter());
 
 
-    setActiveButton(document.querySelector(".button-nav"));
-    loadHome();
-    // setActiveButton(document.querySelector(".button-nav:nth-child(2)"));
-    // loadMenu();
+    // setActiveButton(document.querySelector(".button-nav"));
+    // loadHome();
+    setActiveButton(document.querySelector(".button-nav:nth-child(3)"));
+    loadContact();
 }
 
 export default initializeWebsite;
