@@ -51,6 +51,8 @@ header {
     text-align: center;
     font-size: 5rem;
     padding-bottom: 2rem;
+    padding-left: .2em;
+    padding-right: .2em;
 }
 
 .nav-bar {
@@ -138,6 +140,26 @@ main {
 .grid-item {
     display: flex;
     justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+}
+
+.contact>p {
+    text-align: center;
+    padding-top: 1.3em;
+    font-size: 1.2em;
+}
+
+iframe {
+    max-width: 1200px;
+    margin: 1.5em 0;
+    width: 100%;
 }
 
 footer {
